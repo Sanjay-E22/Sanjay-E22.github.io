@@ -3,50 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sanjay E | Portfolio</title>
+  <title>Sanjay E | ML Portfolio</title>
   <style>
-    body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #1e1e2f; color: white; padding: 1.5rem; text-align: center; }
-    section { padding: 1.5rem; max-width: 800px; margin: auto; background: white; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    h1, h2 { color: #333; }
-    a { color: #0077cc; text-decoration: none; }
-    .project { margin-bottom: 1.5rem; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #1e1e2f;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #0077cc;
+      padding-left: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.3rem;
+      color: #0077cc;
+    }
+
+    .project p {
+      margin: 0.3rem 0 0.5rem;
+    }
+
+    .project a {
+      color: #1e1e2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background-color: #e0ecf8;
+      color: #1e1e2f;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #0077cc;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .resume-button:hover {
+      background-color: #005fa3;
+    }
+
+    ul.cert-list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    ul.cert-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .project h3 {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Sanjay E</h1>
-    <p>Aspiring Data Scientist | Python | ML | DL | NLP | YOLO | Streamlit</p>
+    <p>Aspiring Data Scientist | Machine Learning Engineer</p>
   </header>
 
-  <section>
-    <h2>📂 Projects</h2>
+  <div class="container">
 
-    <div class="project">
-      <h3>🧠 Bert-Resume-Matcher</h3>
-      <p>Fine-tuned BERT for resume parsing with Streamlit app deployment.</p>
-      <a href="https://github.com/Sanjay-E22/Bert-Resume-Matcher" target="_blank">🔗 View on GitHub</a>
-    </div>
+    <section>
+      <h2>💡 Skills</h2>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">YOLOv8</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Statistics</span>
+        <span class="skill-tag">Analytics</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">VS Code</span>
+      </div>
+      <a class="resume-button" href="resume.pdf" download>📄 Download Resume</a>
+    </section>
 
-    <div class="project">
-      <h3>🧬 Cancer Detection ML Project</h3>
-      <p>LogisticRegression model to detect cancer based on patient data.</p>
-      <a href="https://github.com/Sanjay-E22/Cancer-Detection-ML-Project" target="_blank">🔗 View on GitHub</a>
-    </div>
+    <section>
+      <h2>📂 Projects</h2>
 
-    <div class="project">
-      <h3>🛡️ YOLOv8 Fall Detection</h3>
-      <p>Real-time fall detection using YOLOv8 and OpenCV.</p>
-      <a href="https://github.com/Sanjay-E22/yolo-fall-detection" target="_blank">🔗 View on GitHub</a>
-    </div>
-  </section>
+      <div class="project">
+        <h3>🧠 Bert-Resume-Matcher</h3>
+        <p>Fine-tuned BERT for custom NER & resume parsing. Streamlit-based UI to match resumes and job descriptions.</p>
+        <a href="https://github.com/Sanjay-E22/Bert-Resume-Matcher" target="_blank">🔗 View on GitHub</a>
+      </div>
 
-  <section>
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:sanjayelangovan22@gmail.com">sanjayelangovan22@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sanjay-e-76a89a271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/sanjay-e22</a></p>
-  </section>
+      <div class="project">
+        <h3>🧬 Cancer Detection ML Project</h3>
+        <p>Logistic Regression ML model for early-stage cancer detection based on patient diagnostic data.</p>
+        <a href="https://github.com/Sanjay-E22/Cancer-Detection-ML-Project" target="_blank">🔗 View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>🛡️ YOLOv8 Fall Detection</h3>
+        <p>Real-time fall detection system using YOLOv8, OpenCV, and video stream input for healthcare use cases.</p>
+        <a href="https://github.com/Sanjay-E22/yolo-fall-detection" target="_blank">🔗 View on GitHub</a>
+      </div>
+    </section>
+
+    <section>
+  <h2>🎓 Certifications</h2>
+  <ul class="cert-list">
+    <li>NPTEL – Computer Networking and Internet Protocol </li>
+    <li>NPTEL – Ethical Hacking</li>
+    <li>Introduction to Machine Learning </li>
+    <li>Data Analysis with Python </li>
+    <li>Basics of Python </li>
+    <li>Python Developer</li>
+  </ul>
+    </section>
+
+    <section class="contact">
+      <h2>📫 Contact</h2>
+      <p>Email: <a href="mailto:sanjayelangovan22@gmail.com">sanjayelangovan22@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sanjay-e-76a89a271" target="_blank">linkedin.com/in/sanjay-e22</a></p>
+    </section>
+
+  </div>
 
 </body>
 </html>
